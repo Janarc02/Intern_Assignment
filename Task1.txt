@@ -1,0 +1,18 @@
+<?php
+$plate = $_POST['plate'];
+$vintage = "ශ්‍රී";
+$old = "-";
+$modern = "P";
+	if (str_contains($vintage, $plate) == 1){
+    	echo "It's a Vintage Car";
+    }
+	else if (str_contains($old, $plate) == 1){
+    	echo "It's an Old Car";
+    }
+    else if (str_contains($modern, $plate) == 1){
+    	echo "It's a Modern Car";
+    }
+    else {
+    	echo "Error";
+    }
+?>

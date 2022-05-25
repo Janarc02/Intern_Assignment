@@ -1,0 +1,10 @@
+---
+$plate = $_POST['plate'];
+$remove_dash = str_replace('-', '', $plate);
+$count = strlen(preg_replace('/\s+/', '', $plate));
+
+	if ($count == 7 || $count == 8) {
+  		return "True";
+	else {
+		return "False";
+	}
